@@ -126,6 +126,10 @@ span {
 	justify-items: center;
 }
 
+.accounting-months {
+	font-size: clamp(.5rem, 2vh, 3rem);
+}
+
 p {
 	font-size: clamp(1rem, 3vh, 7rem);
 }
