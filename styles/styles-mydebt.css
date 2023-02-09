@@ -157,7 +157,7 @@ input {
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 .second-label {
@@ -169,7 +169,7 @@ input {
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 .third-label {
@@ -184,8 +184,21 @@ input {
 	margin-top: 5%;
 }
 
+.graduation-time {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	margin-top: 10%;
+}
+
 .fourth-label {
-	margin-top: 3%;
+	margin-top: 1%;
+}
+
+.optional {
+	font-size: clamp(.5rem, 2vh, 3rem);
+	margin-top: .3rem;
 }
 
 #output_text {
