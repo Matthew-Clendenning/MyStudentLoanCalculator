@@ -1,4 +1,4 @@
-var p, r, t;
+var p, r, t, g;
 var perMonth, totalInterest, principalPlusInterest, graduation, outputText;
 
 function validate() {
@@ -25,12 +25,8 @@ function validate() {
 		// calculate the result using p[r/12] / [1 - (1 + r/12)^ -12(t)
 		var i = p * ((r/100)/12);
 		var j = 1 - (1 + (r/100)/12)**(-12*t);
-		var total = i / j;
-		//  calculate loan term - time till graduation
 		var k = (total * 12*t) / (g*12 + 6);
-		
-		// total amount to save in 4 years 4293.54
-		// total amount to pay after graduation 5247.96
+		var total = i / j;
 		
 		perMonth = "$"+Math.round(total * 100) / 100;
 		principalPlusInterest = "$"+Math.round((total * 12*t) * 100) / 100;
