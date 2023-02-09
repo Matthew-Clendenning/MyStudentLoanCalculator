@@ -25,8 +25,8 @@ function validate() {
 		// calculate the result using p[r/12] / [1 - (1 + r/12)^ -12(t)
 		var i = p * ((r/100)/12);
 		var j = 1 - (1 + (r/100)/12)**(-12*t);
-		var k = (total * 12*t) / (g*12 + 6);
 		var total = i / j;
+		var k = (total * 12*t) / (g*12 + 6);
 		
 		perMonth = "$"+Math.round(total * 100) / 100;
 		principalPlusInterest = "$"+Math.round((total * 12*t) * 100) / 100;
