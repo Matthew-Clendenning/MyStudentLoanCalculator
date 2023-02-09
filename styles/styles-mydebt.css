@@ -216,7 +216,7 @@ input {
 	}
 	
 	.how-it-works {
-		font-size: clamp(.5rem, 2.3vh, 2rem);
+		font-size: clamp(.5rem, 2.8vh, 2rem);
 	}
 	
 	.description {
@@ -225,8 +225,12 @@ input {
 	}
 	
 	.info {
-		font-size: clamp(.5rem, 2.2vh, 3rem);
-		line-height: 2rem;
+		font-size: clamp(.5rem, 3vh, 3rem);
+		line-height: 3rem;
+	}
+	
+	.disclaimer {
+		font-size: clamp(.5rem, 2vh, 3rem);
 	}
 	
 	.container {
