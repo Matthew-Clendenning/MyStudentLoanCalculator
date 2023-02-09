@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<title>My Student Loan Calculator</title>
+		<link rel="icon" type="image/jpg" href="images\calculator-124.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"type="text/css" href="styles\styles-mydebt.css">
+		<script src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous"></script>
+		<script src="scripts\my debt calculator script.js" defer></script>
+		<script type="text/javascript" src="https://kit.fontawesome.com/e163b7e8b4.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="heading">
+			<h1 class="welcome">My Student Loan Calculator</h1>
+			<section class="description">
+				<h3 class="purpose">What is the purpose?</h3>
+				<p class="purpose-info"><span><strong>My Student Loan Calculator</strong>
+				</span>is a simple and easy to use tool, designed to help college students 
+				determine the amount of money they need to save 
+				<span><strong><i>per month</i></strong></span> in order to have smooth 
+				monthly payments for their loans after graduation.</p>
+				<h3 class="how-it-works">How it works:</h3>
+				<p class="info">To begin using this calculator, you first need to enter
+				the total amount of your loan. Known as your <span><strong>principal
+				</strong></span> amount <strong>(e.g. 7500)</strong>. Next, determine the 
+				<span><strong>fixed interest rate</strong></span> that is placed on your 
+				loan <strong>(e.g. 4.99)</strong>. Lastly, determine what the length, or 
+				<span><strong>loan term</strong></span>, is on your loan. Federal 
+				student loan terms usually range from <strong>10</strong> to 
+				<strong>30</strong> years.</p><p><span class="disclaimer"><br>Disclaimer: 
+				Do not use <strong>dollar signs ($)</strong>, or <strong>percent signs 
+				(%)</strong>, when entering 
+				in your values.</span></p>
+			</section>
+		</header>
+		<section class="scroll">
+			<h1 class="scroll-here">Scroll Down For Calculator</h1>
+			<i class="fa-solid fa-circle-down"></i>
+		</section>
+		<div class="container">
+			<div class="content">
+				<h1 class="title">My Student Loan Calculator</h1>
+				<section class="loan-amount">
+					<h2 class="loan-amount-title">Enter the cost of your loan:</h2>
+					<div class="first-label">
+						<label for="loan-total"></label>
+					</div>
+					<form name="input-form" action="javascript:validate();">
+						<input type="text" id="loan-total" name="Loan Amount" required>
+				</section>
+				<section class="loan-interest">
+					<h2 class="loan-interest-title">Enter your loan's interest rate:</h2>
+					<div class="second-label">
+						<label for="loan-interest-rate"></label>
+					</div>
+					<form name="input-form" action="javascript:validate();">
+						<input type="text" id="loan-interest-rate" name="Loan interest" required>
+				</section>
+				<section class="loan-length">
+					<h2 class="loan-length-title">Loan Term in years:</h2>
+					<div class="third-label">
+						<label for="loan-payment-length"></label>
+					</div>
+					<form name="input-form" action="javascript:validate();">
+						<input type="text" id="loan-term" name="Length of loan" required>
+						<br><br>
+						<input type="submit" id="calc-button" value="Calculate">
+					</form>
+					</form>
+					</form>
+					<br>
+					<p id="output_text"/>
+				</section>
+			</div>
+			<div class="calculations">
+				<section class="payment">
+					<h2 class="payment-title">Amount to save per month:</h2>
+					<p id="per-month"/>
+				</section>
+				<section class="principal-interest">
+					<h2 class="pi-title">Principal and Interest:</h2>
+					<p id="principal-interest-total"/>
+				</section>
+				<section class="total-interest">
+					<h2 class="total-interest-title">Your total interest:</h2>
+					<p id="total-interest-amount"/>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
