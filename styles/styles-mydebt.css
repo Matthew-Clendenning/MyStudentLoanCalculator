@@ -101,10 +101,6 @@ span {
 	border: 10px solid white;
 }
 
-#calc-button {
-	background: white;
-}
-
 .calculations {
 	display: flex;
 	flex-wrap: wrap;
@@ -257,6 +253,7 @@ input {
 	}
 	
 	#calc-button {
+		color: #4078d1;
 		width: 50%;
 	}
 	
