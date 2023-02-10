@@ -101,6 +101,10 @@ span {
 	border: 10px solid white;
 }
 
+#calc-button {
+	background: white;
+}
+
 .calculations {
 	display: flex;
 	flex-wrap: wrap;
@@ -211,6 +215,15 @@ input {
 }
 
 @media (max-width: 40rem) {
+	body {
+		text-shadow: .8px .8px black;
+	}
+	
+	.heading {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	
 	.welcome {
 		font-size: clamp(.5rem, 4vh, 3rem);
 	}
@@ -220,7 +233,7 @@ input {
 	}
 	
 	.description {
-		margin: 6rem .5rem;
+		margin: 6rem 0;
 		padding: 1.5rem;
 	}
 	
@@ -229,13 +242,22 @@ input {
 		line-height: 3rem;
 	}
 	
+	
 	.disclaimer {
 		font-size: clamp(.5rem, 2vh, 3rem);
+	}
+	
+	.scroll-here {
+		font-size: clamp(.5rem, 3.5vh, 3rem);
 	}
 	
 	.container {
 		display: grid;
 		gap: 3rem;
+	}
+	
+	#calc-button {
+		width: 50%;
 	}
 	
 	.calculations {
